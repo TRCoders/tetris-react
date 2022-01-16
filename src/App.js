@@ -1,4 +1,4 @@
 import React from 'react'
 import Tetris from './component/Tetris'
 
-const Ap
+const App 
