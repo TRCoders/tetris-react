@@ -2,6 +2,7 @@ import React from 'react'
 
 import Cell from'./Cell'
 
+// Creates empty cells for the stage
 const Stage = ({ stage }) => (
     <div>
         {stage.map(row => row.map((cell, x) => <Cell key={x} type={cell[0]}/> ))}
