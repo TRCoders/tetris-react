@@ -60,7 +60,7 @@ export const TETROMINOS = {
 }
 
 // Randomly selects a shape by the letter
-export const randomTetromin = () => {
+export const randomTetromino = () => {
     const tetrominos = 'IJLOSTZ'
     const randTetrominos = 
     tetrominos[Math.floor(Math.random() * tetrominos.length)]
