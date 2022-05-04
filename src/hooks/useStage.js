@@ -9,7 +9,7 @@ export const useStage = (player, resetPlayer) => {
 
         }
 
-        setStage(prev => updateStage())
+        setStage(prev => updateStage(p))
 
     }, [])
 
