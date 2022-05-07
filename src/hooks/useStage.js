@@ -12,6 +12,8 @@ export const useStage = (player, resetPlayer) => {
             );
         };
 
+        // Then draw the tetromino
+
         setStage(prev => updateStage(prev))
 
     }, [])
