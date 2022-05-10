@@ -53,7 +53,16 @@ const Tetris = () => {
     }
   };
 
+  const keyUp = ({keyCode}) => {
+    if (!gameOver) {
+      if (keyCode === 40) {
+        setDropTime(1000);
+      }
+    }
+  }
+
   const dropPlayer = () => {
+    setDropTime(null)
     drop();
   };
 
