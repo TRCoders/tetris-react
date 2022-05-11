@@ -32,7 +32,7 @@ export const useStage = (player, resetPlayer) => {
           if (value !== 0) {
             newStage[y + player.pos.y][x + player.pos.x] = [
               value,
-              `${player.collided ? 'merged' : 'cleared'}`,
+              `${player.collided ? 'merged' : 'clear'}`,
             ];
           }
         });
@@ -40,14 +40,13 @@ export const useStage = (player, resetPlayer) => {
       // Then check if we collided
       if (player.collided) {
         resetPlayer();
-        return sweepRows(newStage)
+        return sweepRows(newStage);
       }
-
       return newStage;
     };
 
     setStage((prev) => updateStage(prev));
-  }, [player, resetPlayer]);
+  }, [player, player.pos.x, player.pos.y, player.tetromino, resetPlayer]);
 
   return [stage, setStage, rowsCleared];
 };

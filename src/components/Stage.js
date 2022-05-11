@@ -1,13 +1,13 @@
-import React from 'react'
-import { StyledStage } from './styles/StyledStage'
+import React from 'react';
+import { StyledStage } from './styles/StyledStage';
 
-import Cell from'./Cell'
+import Cell from './Cell';
 
 // Creates empty cells for the stage
 const Stage = ({ stage }) => (
-    <StyledStage width={stage[0].length} height={stage.length}>
-        {stage.map(row => row.map((cell, x) => <Cell key={x} type={cell[0]}/> ))}
-    </StyledStage>
-)
+  <StyledStage width={stage[0].length} height={stage.length}>
+    {stage.map((row) => row.map((cell, x) => <Cell key={x} type={cell[0]} />))}
+  </StyledStage>
+);
 
-export default Stage
+export default Stage;
