@@ -4,7 +4,7 @@ import { TETROMINOS } from '../tetrominos';
 
 // Individual Cells to make the background for the stage
 const Cell = ({ type }) => (
-  <StyledCell type={type} color={TETROMINOS[type].color}>
+  <StyledCell type={type} color={TETFROMINOS[type].color}>
     {console.log('rerender')}
   </StyledCell>
 );
