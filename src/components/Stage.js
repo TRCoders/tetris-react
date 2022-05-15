@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyledStage } from './styles/StyledStage';
-
 import Cell from './Cell';
 
 // Creates empty cells for the stage
