@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Style for display
 export const StyledDisplay = styled.div`
   box-sizing: border-box;
   display: flex;
