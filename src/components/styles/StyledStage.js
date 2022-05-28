@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// Style for the stage.
 export const StyledStage = styled.div`
     display: grid;
     grid-template-rows: repeat(
