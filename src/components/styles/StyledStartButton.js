@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// Style for the Start Button
 export const StyledStartButton = styled.button`
     box-sizing: border-box;
     margin: 0 0 20px 0;
